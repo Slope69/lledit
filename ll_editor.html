@@ -1,0 +1,192 @@
+<!--
+   LL_Editor.html
+   
+   Copyright 2016 AndyP <AndyP@ALIEN_PC>
+   
+   This program is free software; you can redistribute it and/or modify
+   it under the terms of the GNU General Public License as published by
+   the Free Software Foundation; either version 2 of the License, or
+   (at your option) any later version.
+   
+   This program is distributed in the hope that it will be useful,
+   but WITHOUT ANY WARRANTY; without even the implied warranty of
+   MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+   GNU General Public License for more details.
+   
+   You should have received a copy of the GNU General Public License
+   along with this program; if not, write to the Free Software
+   Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
+   MA 02110-1301, USA.
+   
+   
+-->
+
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"
+	"http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+	<title>Ladder Logic Simulator</title>
+	<meta charset= "UTF-8">
+	<meta name="description" content="A browser based ladder logic editor and simulator">
+	<meta name="author" content="Andrew Parry">
+	<meta name="keywords" content="PLC, Ladder, Logic, Simulator, Automation, Controls, Instrumentation">
+	<link rel="stylesheet" type="text/css" href="ll_edit_style.css">
+	<script src="ll_edit_funcs.js"></script>
+</head>
+
+
+<body>
+
+<!-- Set up the Ladder Logic ICONS used to place new elements in the editor area  -->
+<ul id="Icons">
+<li><a>
+<img class="newElement" src="images/Vert_Icon.png" draggable="true" data-lltype="Vert" alt="HTML5 Icon" width="25" height="25">
+</a></li>
+<li><a>
+<img class="newElement" src="images/Horz_Icon.png" draggable="true" data-lltype="Horz" alt="HTML5 Icon" width="25" height="25">
+</a></li>
+<li><a>
+<img class="newElement" src="images/NO_Icon.png" draggable="true" data-lltype="NO" alt="HTML5 Icon" width="25" height="25">
+</a></li> 
+<li><a>
+<img class="newElement" src="images/NC_Icon.png" draggable="true" data-lltype="NC" alt="HTML5 Icon" width="25" height="25">
+</a></li>
+<li><a>
+<img class="newElement" src="images/Coil_Icon.png" draggable="true" data-lltype="Coil" alt="HTML5 Icon" width="25" height="25">
+</a></li>
+</ul>
+<!-- test comment -->
+<table id="LLCanvas">
+   <tr> 
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr> 
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+   <tr>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+      <td></td>
+   </tr>
+</table>
+
+<!--   draw the elements on to the LL editing window  -->
+
+<!--  buttons for testing script functionality -->
+<p><button onclick="test_Script1()" > Build </button><button onclick="test_Script2()" > Update </button></p>
+<br/>
+
+	
+</body>
+
+</html>
